@@ -19,7 +19,7 @@ alias vist='cd ~/Tools/st&&vi config.h'
 alias visls='cd ~/Tools/slstatus&&vi config.h'
 alias vidm='cd ~/Tools/dmenu&&vi config.h'
 # set python virtual env for wmi-ui
-source ~/pyenv/bin/activate
+#source ~/pyenv/bin/activate
 # Set up Node Version Manager
 source /usr/share/nvm/init-nvm.sh
 #处理宽字符截断，没卵用注释掉

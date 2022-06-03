@@ -39,7 +39,7 @@ exec slstatus &
 # remap capslock -> escape
 setxkbmap -option caps:escape
 # resolution
-xrandr --output eDP-1 --mode 1920x1080 --rate 144.00
+xrandr --output eDP-1 --mode 2560x1440 --rate 144.00
 # wallpaper
 feh --bg-fill --randomize /usr/share/backgrounds/archlinux/*
 # make opacity working(for st plug - alpha)
@@ -51,3 +51,4 @@ while true; do
 	# No error logging
 	#dwm >/dev/null 2>&1
 done
+exec dwm &
