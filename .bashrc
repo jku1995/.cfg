@@ -13,6 +13,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias dgrep='dgrep --color=auto'
+alias lvim='~/.local/bin/lvim'
 alias vi='nvim'
 alias vidwm='cd ~/Tools/dwm&&vi config.h'
 alias vist='cd ~/Tools/st&&vi config.h'
@@ -28,4 +29,5 @@ source /usr/share/nvm/init-nvm.sh
 eval "$(lua /usr/share/z.lua/z.lua --init bash)"
 
 PS1='[\u@\h \W]\$ '
+# dotfiles - git bare way
 alias config='/usr/bin/git --git-dir=/home/yef/.cfg/ --work-tree=/home/yef'

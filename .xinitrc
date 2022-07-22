@@ -39,16 +39,12 @@ exec slstatus &
 # remap capslock -> escape
 setxkbmap -option caps:escape
 # resolution
-xrandr --output eDP-1 --mode 2560x1440 --rate 144.00
+xrandr --output eDP-1-1 --mode 2560x1440  --scale 1.25x1.25
 # wallpaper
 feh --bg-fill --randomize /usr/share/backgrounds/archlinux/*
 # make opacity working(for st plug - alpha)
 picom -b
 # restart dwm and other applications not broken
-while true; do
-	# Log stderror to a file 
-        dwm 2> ~/.dwm.log
-	# No error logging
-	#dwm >/dev/null 2>&1
-done
-exec dwm &
+prime-offload &
+ssh-agent dwm
+sudo prime-switch
