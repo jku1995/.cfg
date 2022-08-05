@@ -39,8 +39,8 @@ exec slstatus &
 # remap capslock -> escape
 setxkbmap -option caps:escape
 # resolution
-#xrandr --output eDP-1-1 --mode 2560x1440  --scale 1.25x1.25
-xrandr --output HDMI-1-1 --mode 1920x1080 --rate 90 --scale 1.5x1.5
+xrandr --output eDP-1-1 --mode 2560x1440  --scale 1.25x1.25
+#xrandr --output HDMI-1-1 --mode 1920x1080 --rate 90 --scale 1.5x1.5
 # wallpaper
 feh --bg-fill --randomize /usr/share/backgrounds/archlinux/*
 # make opacity working(for st plug - alpha)
