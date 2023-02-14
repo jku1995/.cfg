@@ -152,4 +152,4 @@ function chpwd(){
     echo $(pwd) > ~/global_pwd
   fi
 }
-cd ~
+echo $(pwd) > ~/global_pwd
