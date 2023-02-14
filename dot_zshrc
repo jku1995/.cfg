@@ -141,3 +141,15 @@ alias vim=nvim
 alias rm='gio trash'
 alias ch='chezmoi'
 export EDITOR='lvim'
+# my script
+#cd hook
+function chpwd(){
+  local pre_pwd=$(cat ~/global_pwd)
+  local current_pwd=$(pwd)
+  #printf "%s\n" "$pre_pwd"
+  #printf "%s\n" "$current_pwd"
+  if [[ $pre_pwd!=$current_pwd ]]; then
+    echo $(pwd) > ~/global_pwd
+  fi
+}
+cd ~
