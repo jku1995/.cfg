@@ -122,7 +122,8 @@ alias zshconfig="geany ~/.zshrc"
 alias ohmyzsh="thunar ~/.oh-my-zsh"
 
 # ls
-alias l='ls -lh'
+#alias l='ls -lh'
+alias l='lvim'
 alias ll='ls -lah'
 alias la='ls -A'
 alias lm='ls -m'
@@ -139,4 +140,4 @@ alias n=nvim
 alias vim=nvim
 alias rm='gio trash'
 alias ch='chezmoi'
-export EDITOR='nvim'
+export EDITOR='lvim'
