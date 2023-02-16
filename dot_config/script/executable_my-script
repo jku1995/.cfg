@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo 0 > /sys/class/leds/clevo_xsm::airplane/device/kb_state
+setkeycodes 0x3a 1
+# start doh client
+#virsh net-start default
+#/usr/bin/doh-client -conf /etc/dns-over-https/doh-client.conf
