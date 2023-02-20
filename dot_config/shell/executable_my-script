@@ -1,6 +1,8 @@
 #!/bin/sh
-
+keyboard_light_stat = $( cat /sys/class/leds/clevo_xsm::airplane/device/kb_state )
+if [[ keyboard_light_stat != "0" ]];then
 echo 0 > /sys/class/leds/clevo_xsm::airplane/device/kb_state
+fi
 setkeycodes 0x3a 1
 # start doh client
 #virsh net-start default
