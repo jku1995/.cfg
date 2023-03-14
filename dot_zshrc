@@ -140,6 +140,7 @@ alias n=nvim
 alias vim=nvim
 alias rm='gio trash'
 alias ch='chezmoi'
+alias mvn='mvn -q'
 export EDITOR='lvim'
 # my script
 #cd hook
