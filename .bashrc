@@ -111,5 +111,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+
+export PATH=$PATH:$HOME/go/bin
+
 alias config='/usr/bin/git --git-dir=/home/homura/.cfg/ --work-tree=/home/homura'
 alias lazyconfig='lazygit --git-dir=$HOME/.cfg --work-tree=$HOME'
